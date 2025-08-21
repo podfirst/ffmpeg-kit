@@ -22,7 +22,7 @@ jobs:
         run: echo "export DEVELOPER_DIR=/Applications/Xcode_15.4.app/Contents/Developer" > ~/.xcode.for.ffmpeg.kit.sh
         
       - name: Build iOS xcframework (full-gpl)
-        run: ./ios.sh --xcframework --enable-ios-audiotoolbox --enable-ios-avfoundation --enable-ios-bzip2 --enable-ios-libiconv --enable-ios-videotoolbox --enable-ios-zlib --enable-gpl --enable-libx264 --enable-libx265
+        run: ./ios.sh --xcframework --enable-ios-audiotoolbox --enable-ios-avfoundation --enable-ios-bzip2 --enable-ios-libiconv --enable-ios-videotoolbox --enable-ios-zlib --enable-gpl --enable-x264 --enable-x265
         
       - name: Print build logs
         if: ${{ always() }}
